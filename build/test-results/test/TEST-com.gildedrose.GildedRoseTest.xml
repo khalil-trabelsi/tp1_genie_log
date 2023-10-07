@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-10-02T08:43:12" hostname="DESKTOP-A3NN90T" time="0.291">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-10-07T14:10:05" hostname="DESKTOP-A3NN90T" time="0.094">
   <properties/>
-  <testcase name="test_Backstagepasses_augmente_sa_qualité_de_trois()" classname="com.gildedrose.GildedRoseTest" time="0.244"/>
+  <testcase name="test_Backstagepasses_augmente_sa_qualité_de_deux1()" classname="com.gildedrose.GildedRoseTest" time="0.042"/>
+  <testcase name="test_Backstagepasses_augmente_sa_qualité_de_trois()" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
   <testcase name="test_Backstagepasses_augmente_sa_qualité_de_deux()" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
-  <testcase name="test_sellin_inf_0()" classname="com.gildedrose.GildedRoseTest" time="0.003"/>
-  <testcase name="test_backstage_apres_concert()" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
-  <testcase name="test_produit_Aged_augmente_sa_qualite_plus_le_temps_passe()" classname="com.gildedrose.GildedRoseTest" time="0.013"/>
-  <testcase name="test_qualité_produit_ne_depasse_jamais_50()" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
-  <testcase name="test_qualite_toujours_positive()" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="test_sellin_inf_0()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="test_backstage_apres_concert()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="test_produit_Aged_augmente_sa_qualite_plus_le_temps_passe()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="test_qualité_produit_ne_depasse_jamais_50()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="test_qualite_toujours_positive()" classname="com.gildedrose.GildedRoseTest" time="0.004"/>
   <testcase name="test_qualite_augmente_de_1()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="test_produit_Sulfuras_ne_perd_jamais_en_qualité()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="test_qualite_sedegrade_deux_fois_si_la_date_de_péremption_est_passée()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="test_sellin_sup_0_et_quantite_sup_50()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="test_produit_Sulfuras_ne_perd_jamais_en_qualité()" classname="com.gildedrose.GildedRoseTest" time="0.005"/>
+  <testcase name="test_qualite_sedegrade_deux_fois_si_la_date_de_péremption_est_passée()" classname="com.gildedrose.GildedRoseTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

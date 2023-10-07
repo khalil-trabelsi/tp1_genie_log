@@ -78,6 +78,21 @@ class GildedRoseTest {
   }
 
   @Test
+  void test_Backstagepasses_augmente_sa_qualité_de_un(){
+    //Arrange
+    items = new Item[] {  new Item("Backstage passes to a TAFKAL80ETC concert", 12, 48)};
+    appUnderTest = new GildedRose(items);
+
+    //Act 
+    appUnderTest.updateQuality();
+
+    //Assert
+    assertEquals(49, appUnderTest.items[0].quality);
+
+  }
+
+
+  @Test
   void test_Backstagepasses_augmente_sa_qualité_de_trois() {
     //Arrange
     items = new Item[] {  new Item("Backstage passes to a TAFKAL80ETC concert", 4, 40)};
@@ -139,4 +154,14 @@ class GildedRoseTest {
 
     assertEquals(14, appUnderTest.items[0].quality);
   }
+
+    @Test
+  void test_sellin_sup_0_et_quantite_sup_50() {
+    items = new Item[] {new Item("Aged Brie", -10, 50)};
+    appUnderTest = new GildedRose(items);
+    appUnderTest.updateQuality();
+
+    assertEquals(50, appUnderTest.items[0].quality);
+  }
+
 }
