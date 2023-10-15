@@ -1,6 +1,9 @@
 package com.gildedrose;
 
 class GildedRose {
+    static final int QUALITY_MAX_VALUE = 50;
+    static final int BACKSTAGE_SELLIN_MAX = 11;
+    static final int BACKSTAGE_SELLIN_MAX1 = 6;
     Item[] items;
 
     public GildedRose(Item[] items) {
@@ -11,10 +14,10 @@ class GildedRose {
 
     private void updateQualityBackStage(Item item) {
             increaseQuality(item);
-            if(item.sellIn < 11) {
+            if(item.sellIn < BACKSTAGE_SELLIN_MAX) {
                 increaseQuality(item);
             }
-            if(item.sellIn < 6 ) {
+            if(item.sellIn < BACKSTAGE_SELLIN_MAX1 ) {
                 increaseQuality(item);
             }
             
@@ -22,13 +25,11 @@ class GildedRose {
         if(item.sellIn<0) {
             item.quality = 0;
         }
-
-
       
     }
 
     private void increaseQuality(Item item) {
-        if (item.quality <50) {
+        if (item.quality <QUALITY_MAX_VALUE) {
             item.quality+=1;
         }
     }
