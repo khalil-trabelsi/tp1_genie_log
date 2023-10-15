@@ -100,7 +100,7 @@ class GildedRoseTest {
 
     //Act 
     appUnderTest.updateQuality();
-
+    
     //Assert
     assertEquals(43, appUnderTest.items[0].quality);
 
