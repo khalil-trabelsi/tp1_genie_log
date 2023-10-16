@@ -164,4 +164,13 @@ class GildedRoseTest {
     assertEquals(50, appUnderTest.items[0].quality);
   }
 
+  @Test
+  void test_conjured_sellin_inf_0() {
+     items = new Item[] {new Item("Conjured", -10, 10)};
+    appUnderTest = new GildedRose(items);
+    appUnderTest.updateQuality();
+
+    assertEquals(6, appUnderTest.items[0].quality); 
+  }
+
 }

@@ -57,6 +57,20 @@ class GildedRose {
 
     }
 
+    public void updateQualityConjured(Item item) {
+        if(item.quality <=0) {
+            if(item.sellIn >= 0) {
+                item.quality-=2;
+
+        }
+        else {
+            item.quality-=4;
+        }
+        }
+        item.sellIn = item.sellIn - 1;
+        
+    }
+
     public void updateQuality() {
         for (int i = 0; i < items.length; i++) {
 
@@ -69,6 +83,9 @@ class GildedRose {
                     updateQualityBackStage(items[i]);
                     break;
                 }
+                case "Conjured":
+                    updateQualityConjured(items[i]);
+                    break;
                 case "Sulfuras, Hand of Ragnaros":
                 break;
                 default: 
